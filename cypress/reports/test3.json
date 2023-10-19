@@ -1,0 +1,104 @@
+{
+    "runs": [
+        {
+            "stats": {
+                "suites": 1,
+                "tests": 2,
+                "passes": 1,
+                "pending": 0,
+                "skipped": 0,
+                "failures": 1,
+                "duration": 11015,
+                "startedAt": "2023-08-09T19:55:00.570Z",
+                "endedAt": "2023-08-09T19:55:11.585Z"
+            },
+            "reporter": "spec",
+            "reporterStats": {
+                "suites": 1,
+                "tests": 2,
+                "passes": 1,
+                "pending": 0,
+                "failures": 1,
+                "start": "2023-08-09T19:55:00.576Z",
+                "end": "2023-08-09T19:55:11.616Z",
+                "duration": 11040
+            },
+            "hooks": [],
+            "tests": [
+                {
+                    "title": [
+                        "LoginCBS",
+                        "LoginSuccess"
+                    ],
+                    "state": "failed",
+                    "body": "function () {\n    cy.Login(_Credentials.default.username, _Credentials.default.password);\n    cy.get('.toast-message').should('have.text', 'Welcome to CBS');\n    cy.get('.navbar-right > .dropdown > .dropdown-toggle').should('have.text', _Credentials.default.WelcomeToastr);\n  }",
+                    "displayError": "AssertionError: Timed out retrying after 4000ms: expected '<a.dropdown-toggle.ng-binding>' to have text 'Cypress', but the text was ' Cypress'\n    at Context.eval (webpack:///./cypress/e2e/CBS/CBSLogin.cy.js:9:59)",
+                    "attempts": [
+                        {
+                            "state": "failed",
+                            "error": {
+                                "name": "AssertionError",
+                                "message": "Timed out retrying after 4000ms: expected '<a.dropdown-toggle.ng-binding>' to have text 'Cypress', but the text was ' Cypress'",
+                                "stack": "    at Context.eval (webpack:///./cypress/e2e/CBS/CBSLogin.cy.js:9:59)",
+                                "codeFrame": {
+                                    "line": 9,
+                                    "column": 60,
+                                    "originalFile": "cypress/e2e/CBS/CBSLogin.cy.js",
+                                    "relativeFile": "cypress/e2e/CBS/CBSLogin.cy.js",
+                                    "absoluteFile": "C:\\TestesAutomatizados\\Cypress/cypress/e2e/CBS/CBSLogin.cy.js",
+                                    "frame": "   7 |     cy.Login(credentials.username, credentials.password)\n   8 |     cy.get('.toast-message').should('have.text', 'Welcome to CBS')\n>  9 |     cy.get('.navbar-right > .dropdown > .dropdown-toggle').should('have.text', credentials.WelcomeToastr)\n     |                                                            ^\n  10 |   })\n  11 | \n  12 |   it('Login failure', () => {",
+                                    "language": "js"
+                                }
+                            },
+                            "videoTimestamp": 2798,
+                            "duration": 9370,
+                            "startedAt": "2023-08-09T19:55:00.590Z",
+                            "screenshots": [
+                                {
+                                    "name": null,
+                                    "takenAt": "2023-08-09T19:55:09.736Z",
+                                    "path": "C:\\TestesAutomatizados\\Cypress\\cypress\\screenshots\\CBSLogin.cy.js\\LoginCBS -- LoginSuccess (failed).png",
+                                    "height": 720,
+                                    "width": 1280
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": [
+                        "LoginCBS",
+                        "Login failure"
+                    ],
+                    "state": "passed",
+                    "body": "() => {\n    cy.Login(_Credentials.default.username, _Credentials.default.invalidpassword);\n    cy.get('.toast-message').should('have.text', 'Informed credentials are invalid!');\n  }",
+                    "displayError": null,
+                    "attempts": [
+                        {
+                            "state": "passed",
+                            "error": null,
+                            "videoTimestamp": 12207,
+                            "duration": 1584,
+                            "startedAt": "2023-08-09T19:55:09.999Z",
+                            "screenshots": []
+                        }
+                    ]
+                }
+            ],
+            "error": null,
+            "video": "C:\\TestesAutomatizados\\Cypress\\cypress\\videos\\CBSLogin.cy.js.mp4",
+            "spec": {
+                "fileExtension": ".js",
+                "baseName": "CBSLogin.cy.js",
+                "fileName": "CBSLogin",
+                "specFileExtension": ".cy.js",
+                "relativeToCommonRoot": "CBSLogin.cy.js",
+                "specType": "integration",
+                "name": "cypress/e2e/CBS/CBSLogin.cy.js",
+                "relative": "cypress\\e2e\\CBS\\CBSLogin.cy.js",
+                "absolute": "C:/TestesAutomatizados/Cypress/cypress/e2e/CBS/CBSLogin.cy.js"
+            },
+            "shouldUploadVideo": true
+        }
+    ]
+}

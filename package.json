@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "cypress": "^12.17.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.9"
+  },
+  "scripts": {
+    "apirun:uat": "cypress run --spec 'cypress/e2e/CBS/SoapUI.cy.js' --env environment=uat",
+    "open:uat": "cypress open --env environment=uat",
+    "apitest:uat": "node cypress/e2e-run-tests.js --env environment=uat"    
+  }
+}

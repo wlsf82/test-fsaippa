@@ -1,0 +1,11 @@
+# Ignore a pasta node_modules
+node_modules
+
+/factories
+
+/fixtures
+/reports
+/screenshots
+/videos
+/results
+/extratest

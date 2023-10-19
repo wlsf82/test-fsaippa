@@ -1,0 +1,11 @@
+{
+    "selectFilters": [
+      {"key": "#country", "value": "United Kingdom"},
+      {"key": "#aggregatedlines", "value": "Show all invoices"},
+      {"key": "#showhistorical", "value": "No"},
+      {"key": "#vendor", "value": "Cisco Annuity"},
+      {"key": "#showbreakdownlink", "value": "Both"},
+      {"key": "#doctype", "value": "ZOR"}
+    ]
+  }
+  
