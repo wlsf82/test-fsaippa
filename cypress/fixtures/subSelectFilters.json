@@ -1,9 +1,0 @@
-{
-    "selectFilters": [
-      {"key": "#country", "value": "United Kingdom"},
-      {"key": "#vendor", "value": "Cisco Annuity"},
-      {"key": "#statusvalid", "value": "All"},
-      {"key": "#statusactive", "value": "Active"},
-      {"key": "#isexpired", "value": "No"}
-    ]
-  }
